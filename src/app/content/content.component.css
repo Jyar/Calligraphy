@@ -1,0 +1,22 @@
+.container{
+    width: 100%;
+}
+
+.image{
+    margin: 50px;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    display: flex;
+}
+
+app-card{
+    max-width: 300px;
+}
+
+.collection{
+    text-align: center;
+}

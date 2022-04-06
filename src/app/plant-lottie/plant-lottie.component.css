@@ -1,0 +1,18 @@
+.plant-moving{
+    margin: 20px;
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+.pencil-cup{
+    margin: 20px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.animations{
+    display: flex;
+}

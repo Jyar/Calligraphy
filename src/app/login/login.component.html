@@ -1,0 +1,32 @@
+<div class="center">
+    <h1>Please Login</h1>
+    <form [formGroup]=profileForm class="example-form" (ngSubmit)="onSubmit()">
+        <div class="displayBlock">
+            <div>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput formControlName="username">
+                    <mat-error *ngIf="this.profileForm.get('username')?.hasError('required')">
+                        Username is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput formControlName="password">
+                    <mat-error *ngIf="this.profileForm.get('password')?.hasError('required')">
+                        Password is <strong>required</strong>
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="center-buttons">
+            <div class="button-group">
+                <button mat-raised-button type="submit" [disabled]="!profileForm.valid" color="primary">Next</button>
+                <span class="example-spacer"></span>
+                <button mat-raised-button class="signUp" color="accent" [disabled]="profileForm.valid" (click)="loginF()">Sign Up</button>
+            </div>
+        </div>
+    </form>
+    </div>

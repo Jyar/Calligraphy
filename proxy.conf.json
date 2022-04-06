@@ -1,0 +1,10 @@
+{
+    "/express": {
+      "target": "http://localhost:3000/login",
+      "secure": true,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/express": ""
+      }
+    }
+  }
