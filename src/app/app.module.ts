@@ -25,6 +25,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ProfilepageComponent } from './profilepage/profilepage.component';
 
 
 export function playerFactory() {
@@ -41,7 +42,8 @@ export function playerFactory() {
     PlantLottieComponent,
     LoginComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    ProfilepageComponent
   ],
   imports: [
     BrowserModule,

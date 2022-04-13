@@ -13,5 +13,5 @@
 
   </mat-toolbar>
 
-
-  <app-content></app-content>
+<router-outlet name="pagecontent"></router-outlet>
+  <app-content *ngIf="defaultPage"></app-content>
