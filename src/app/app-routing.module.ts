@@ -1,6 +1,7 @@
 import { Injectable, NgModule } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, Router, RouterModule, Routes } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ContentComponent } from './content/content.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -29,13 +30,18 @@ const routes: Routes = [
   {path: '', 
   component: HomeComponent, 
   data: {isLoggedIn: false},
-  canActivate:[AccessGuard]
+  canActivate:[AccessGuard],
+  children: [
+    {path: '',
+   component: ContentComponent
+  },
+    {path: 'profilepage',
+   component: ProfilepageComponent
+  },
+  ]
 },
   {path: 'login',
    component: LoginComponent
-  },
-  {path: 'profilepage',
-   component: ProfilepageComponent
   },
   {path: '**',
    component: NotFoundComponent
