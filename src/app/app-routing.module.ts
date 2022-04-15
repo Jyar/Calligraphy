@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ProfilepageComponent } from './profilepage/profilepage.component';
 
 @Injectable()
 export class AccessGuard implements CanActivate {
@@ -33,9 +32,6 @@ const routes: Routes = [
 },
   {path: 'login',
    component: LoginComponent
-  },
-  {path: 'profilepage',
-   component: ProfilepageComponent
   },
   {path: '**',
    component: NotFoundComponent
