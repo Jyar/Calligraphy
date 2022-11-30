@@ -1,3 +1,7 @@
+.row{
+    width: 100%;
+}
+
 .container{
     width: 100%;
 }
@@ -7,8 +11,8 @@
 }
 
 img{
-    width: 300px;
-    height: 400px;
+    width: 100%;
+    height: auto;
     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
     display: flex;
 }

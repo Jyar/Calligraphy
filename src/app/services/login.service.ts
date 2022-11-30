@@ -4,11 +4,11 @@ import { config, Observable , throwError } from 'rxjs';
 
 @Injectable()
 export class LoginService {
-    configDBUrl: string = window.location.protocol + '//' + window.location.host + '/express';
-
+   // configDBUrl: string = window.location.protocol + '//' + window.location.host + ' /express/signup';
+configDBUrl: string = '/express/signup';
     constructor(private http: HttpClient){}
    
-    getLogin(){
+    getLogin(message: string){
         const dbOptions  = {
             // headers: new HttpHeaders({
             //     'Accept': 'text/html, application/xhtml+xml, */*',

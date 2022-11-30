@@ -23,6 +23,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatRadioModule} from '@angular/material/radio';
 import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
@@ -57,6 +59,8 @@ export function playerFactory() {
     ReactiveFormsModule,
     LottieModule.forRoot({ player: playerFactory }),
     MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
     HttpClientModule
   ],
   providers: [LoginService],
