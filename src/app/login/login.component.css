@@ -1,33 +1,38 @@
-
-.displayBlock{
+.displayBlock {
     display: block;
     margin-bottom: 5px;
 }
 
-.center{
-   margin: auto;
+.center {
+    margin: auto;
     width: 35%;
     top: 30%;
     position: relative;
 }
 
-.marginTop{
+@media screen and (max-width: 720px) {
+    .center {
+        width: 50%;
+    }
+}
+
+.marginTop {
     margin-top: 10px;
 }
 
-.marginLeft{
+.marginLeft {
     margin-left: 10px;
 }
 
-.example-full-width{
+.example-full-width {
     width: 100%;
 }
 
 .example-spacer {
     flex: 1 1 auto;
-  }
+}
 
-  .button-group{
+.button-group {
     display: flex;
     box-sizing: border-box;
     padding: 0 15%;
@@ -35,20 +40,20 @@
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-  }
+}
 
-  .button-group button{
+.button-group button {
     width: 45%;
     min-width: 30%;
-  }
+}
 
-  .center-buttons{
-      width: 100%;
-      margin: auto;
-  }
+.center-buttons {
+    width: 100%;
+    margin: auto;
+}
 
-  @media screen and (max-width: 720px) {
-    .button-group{
+@media screen and (max-width: 720px) {
+    .button-group {
         display: flex;
         box-sizing: border-box;
         width: 100%;
@@ -56,12 +61,12 @@
         flex-direction: row;
         align-items: center;
         white-space: nowrap;
-      }
-    
-      .button-group button{
+    }
+    .button-group button {
         width: 49%;
-      }
-  }
+    }
+}
+
 
 /* .mat-raised-button.signUp{
     color: #f0fff3;

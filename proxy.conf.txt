@@ -1,0 +1,5 @@
+notes: 
+
+
+the top index attaches to target 
+thats why rewrite works because it removes the top index

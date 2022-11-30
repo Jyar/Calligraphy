@@ -24,8 +24,11 @@ profileForm = new FormGroup({
   loginF(){ }
 
   onSubmit() {
+
+    // data needs to be sent from form
+    var message = 'the message';
     // TODO: Use EventEmitter with form value
-    this.LoginService.getLogin().subscribe(data => {
+    this.LoginService.getLogin(message).subscribe(data => {
       console.log(data);
     });
 

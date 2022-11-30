@@ -1,10 +1,16 @@
 {
-    "/express": {
-      "target": "http://localhost:3000/login",
-      "secure": true,
+    
+    "/express/signup": {
+      "target": "http://localhost:3080/api/signup",
+      "secure": false,
       "changeOrigin": true,
+      "logLevel": "debug",
       "pathRewrite": {
-        "^/express": ""
+        "^/express/signup": ""
+      },
+      "headers":{
+        "Access-Control-Allow-Origin": "*"
       }
     }
+
   }
