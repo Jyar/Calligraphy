@@ -28,6 +28,8 @@ import {MatRadioModule} from '@angular/material/radio';
 import { LoginService } from './services/login.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
+import { HeaderBarComponent } from './header-bar/header-bar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export function playerFactory() {
@@ -45,7 +47,9 @@ export function playerFactory() {
     LoginComponent,
     NotFoundComponent,
     HomeComponent,
-    ProfilepageComponent
+    ProfilepageComponent,
+    HeaderBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
