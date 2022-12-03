@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { LoginService } from '../services/login.service';
+import { SoccerAPIService } from '../services/soccer-api.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ profileForm = new FormGroup({
   password: new FormControl({value: '', disabled: false},  Validators.required)
 });
 
-  constructor(private router: Router, private LoginService: LoginService) {}
+  constructor(private router: Router, private LoginService: LoginService, private soccerService: SoccerAPIService) {}
 
   ngOnInit(){ }
 
@@ -31,6 +32,8 @@ profileForm = new FormGroup({
     this.LoginService.getLogin(message).subscribe(data => {
       console.log(data);
     });
+
+    console.log(this.soccerService.getSoccer());
 
   }
 

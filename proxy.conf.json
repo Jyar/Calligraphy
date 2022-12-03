@@ -1,16 +1,29 @@
 {
-    
+
     "/express/signup": {
-      "target": "http://localhost:3080/api/signup",
-      "secure": false,
-      "changeOrigin": true,
-      "logLevel": "debug",
-      "pathRewrite": {
-        "^/express/signup": ""
-      },
-      "headers":{
-        "Access-Control-Allow-Origin": "*"
-      }
+        "target": "http://localhost:3080/api/signup",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/express/signup": ""
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    "/soccer": {
+        "target": "https://free-football-soccer-videos1.p.rapidapi.com/v1/",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/soccer": ""
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
     }
 
-  }
+
+}
