@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { LoginService } from '../services/login.service';
 import { SoccerAPIService } from '../services/soccer-api.service';
@@ -13,9 +13,9 @@ import { SoccerAPIService } from '../services/soccer-api.service';
 export class LoginComponent implements OnInit {
 login: boolean = false;
 
-profileForm = new FormGroup({
-  username: new FormControl({value: '', disabled: false, }, Validators.required),
-  password: new FormControl({value: '', disabled: false},  Validators.required)
+profileForm = new UntypedFormGroup({
+  username: new UntypedFormControl({value: '', disabled: false, }, Validators.required),
+  password: new UntypedFormControl({value: '', disabled: false},  Validators.required)
 });
 
   constructor(private router: Router, private LoginService: LoginService, private soccerService: SoccerAPIService) {}

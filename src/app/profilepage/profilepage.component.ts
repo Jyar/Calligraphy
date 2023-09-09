@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 @Component({
   selector: 'app-profilepage',
@@ -11,9 +11,9 @@ export class ProfilepageComponent implements OnInit {
   selected = 'option2';
 
 
-  contactForm = new FormGroup({
-    name: new FormControl({value: '', disabled: false, }, Validators.required),
-    email: new FormControl({value: '', disabled: false},  Validators.required)
+  contactForm = new UntypedFormGroup({
+    name: new UntypedFormControl({value: '', disabled: false, }, Validators.required),
+    email: new UntypedFormControl({value: '', disabled: false},  Validators.required)
   });
 
   constructor() { }
